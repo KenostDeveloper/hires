@@ -1,0 +1,134 @@
+.nav{
+    height: 95px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*padding-top: 50px;*/
+    position: fixed;
+    justify-content: center;
+    padding-top: 45px;
+    top: 0;
+    background: #FFF;
+    z-index: 2;
+    transition: all 0.4s;
+}
+
+.nav.fixed{
+    height: 65px;
+    padding-top: 0px;
+}
+
+.nav.fixed .navNavigation{
+    left: 0;    
+}
+
+.nav.fixed .logoText{
+    opacity: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+    transition: all 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}
+
+.logo:hover .logoText{
+    opacity: 1 !important;
+}
+
+.logoText{
+    margin-bottom: 7px;
+    transition: all 0.4s;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.navLinks a{
+    display: flex;
+    align-items: center;
+}
+
+.navLinks a svg{
+    width: 24px;
+    height: 24px;
+}
+
+.navNavigation{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    position: relative;
+    left: 50px;
+    transition: all 0.4s;
+}
+
+.link{
+    color: #312C2C;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.link:hover{
+    color: #4A0EB9;
+}
+
+.vk svg path{
+    fill: #312C2C;
+    transition: all 0.3s;
+}
+
+.tg  svg path{
+    fill: #312C2C;
+    transition: all 0.3s;
+}
+
+.vk:hover svg path{
+    fill: #0277FF;
+}
+
+.tg:hover svg path{
+    fill: #00B8E7;
+}
+
+.nav__bron{
+    display: inline-flex;
+    padding: 0px 15px 2px 15px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #4A0EB9;
+    cursor: pointer;
+    color: #4A0EB9;
+    transition: all 0.4s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav__bron.active{
+    transition: all 0.4s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.nav__bron:hover{
+    background: #4A0EB9;
+    color: #FFF;
+}
