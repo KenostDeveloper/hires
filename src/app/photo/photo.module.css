@@ -1,0 +1,34 @@
+.kenost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 145px;
+}
+
+.PhotoContainer{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width:1000px) {
+
+}
+  
+@media (max-width:768px) {
+
+
+}
+  
+@media (max-width:576px) {
+
+}

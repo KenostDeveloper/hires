@@ -3,10 +3,10 @@ import React from 'react';
 import styles from './Title.module.css'
 
 
-const Title = ({text, id}: any) => {
+const Title = ({text, id, padding}: any) => {
 
     return (
-        <h2 id={id} className={styles.title}>{text}</h2>
+        <h2 id={id} className={padding? `${styles.title} ${styles.padding}` : `${styles.title}`}>{text}</h2>
     );
 };
 

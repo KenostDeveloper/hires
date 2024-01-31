@@ -3,7 +3,7 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import styles from './Swiper.module.css'
-import {Pagination, Navigation } from 'swiper/modules';
+import {Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -16,14 +16,38 @@ const SwiperJS = ({setModal}: any) => {
 
     return (
         <Swiper
-            modules={[Pagination, Navigation]}
+            modules={[Pagination, Navigation, Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
+            centeredSlides={true}
             loop={true}
-            autoplay={{
-                delay: 3000,
-                disableOnInteraction: false,
+            // autoplay={{ delay: 3000 }}
+
+            breakpoints={{
+                0: {
+                    centeredSlides: true,
+                    slidesPerView: 1,
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1.1,
+                    spaceBetween: 50,
+                    centeredSlides: true,
+                },
+                // when window width is >= 768px
+                768: {
+                    spaceBetween: 30,
+                    slidesPerView: 1.4,
+                    centeredSlides: true,
+                },
+                1001: {
+                    centeredSlides: false,
+                    spaceBetween: 50,
+                    slidesPerView: 1,
+                },
+
             }}
+
             navigation
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}

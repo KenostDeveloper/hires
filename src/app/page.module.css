@@ -226,6 +226,7 @@
     transition: 0.4s;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .mainButtonTwo::before{
@@ -308,6 +309,22 @@
     z-index: -1;
 }
 
+.lines2{
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    pointer-events: none;
+    /* top: 100px; */
+}
+
+.lines2 svg{
+    width: 100vw;
+    position: absolute;
+    transform: rotate(20deg) translate(-20%, -20%);
+    right: 0;
+    z-index: -1;
+}
+
 .kenost{
     display: flex;
     flex-direction: column;
@@ -344,10 +361,16 @@
     
 }
 
-.fact p a{
+/* .fact p a{
     text-decoration: underline;
     color: #4A0EB9;
-} 
+} */
+
+.fact_a{
+    text-decoration: underline;
+    color: #4A0EB9;
+    cursor: pointer;
+}
 
 .fact__el img{
     width: 50px;
@@ -548,4 +571,557 @@
     height: 16px;
     width: 120px;
     transform: scale(1.2);
+}
+
+
+.shadowOne{
+    border-radius: 588px;
+    width: 666px;
+    height: 666px;
+    opacity: 0.65;
+    background: radial-gradient(46.64% 46.64% at 50% 50%, #9419FB 0%, rgba(148, 25, 251, 0.00) 100%);
+    position: absolute;
+    filter: blur(44.5px);
+    right: -22%;
+    pointer-events: none;
+    z-index: -1;
+
+}
+
+.shadowTwo{
+    border-radius: 588px;
+    width: 666px;
+    height: 666px;
+    opacity: 0.65;
+    background: radial-gradient(46.64% 46.64% at 50% 50%, #9419FB 0%, rgba(148, 25, 251, 0.00) 100%);
+    position: absolute;
+    filter: blur(44.5px);
+    left: -25%;
+    pointer-events: none;
+    z-index: -1;
+
+}
+
+.shadowTree{
+    border-radius: 588px;
+    width: 666px;
+    height: 666px;
+    opacity: 0.65;
+    background: radial-gradient(46.64% 46.64% at 50% 50%, #9419FB 0%, rgba(148, 25, 251, 0.00) 100%);
+    position: absolute;
+    filter: blur(44.5px);
+    right: -20%;
+    /* bottom: 0; */
+    pointer-events: none;
+    z-index: -1;
+}
+
+.main{
+    overflow-x: hidden;
+    width: 100vw;
+    position: relative;
+}
+
+.mainButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contactButtons p{
+    font-family: 'cygre-black', sans-serif;
+    color: #4A0EB9;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.contactButtons{
+    display: flex;
+    gap: 26px;
+    margin-bottom: 50px;
+}
+
+.contactInfo{
+    font-family: 'cygre-black', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #312C2C;
+    margin-bottom: 20px;
+}
+
+.contactSocialsMobile{
+    display: none;
+}
+
+
+@media (max-width: 1600px) {
+    .shadowOne{
+        right: -26%;
+    }
+
+    .shadowTwo{
+        left: -26%;
+
+    }
+
+    .shadowTree{
+        right: -25%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .shadowOne{
+        right: -25%;
+        width: 500px;
+        height: 500px;
+    }
+
+    .shadowTwo{
+        left: -28%;
+        width: 500px;
+        height: 500px;
+        margin-top: 300px;
+    }
+
+    .shadowTree{
+        right: -28%;
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .mainLeft{
+        flex-direction: row;
+        width: 800px;
+    }
+
+    .mainButtons{
+        width: 375px;
+    }
+
+    .showPhoto{
+        height: 255px;
+    }
+
+    .showPhoto p{
+        top: 45%;
+        transform: translate(0, -50%);
+    }
+
+    .showPhoto svg{
+        top: calc(45% + 70px);
+        transform: translate(0, -50%);
+    }
+
+    .shadowOne{
+        right: -25%;
+        width: 400px;
+        height: 400px;
+        margin-top: 150px;
+    }
+
+    .turnkey h2{
+        font-size: 60px;
+    }
+
+    .shadowTwo{
+        margin-top: 500px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .contact{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .contactLeft{
+        width: 100%;
+        height: 420px;
+        margin: 0;
+    }
+
+    .contactRight{
+        width: 100%;
+    }
+
+    .shadowTree{
+        width: 400px;
+        height: 400px;
+        margin-top: 550px;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .container{
+        width: 730px;
+    }
+    
+    .imgMain{
+        width: 100%;
+    }
+
+    .imgMain h1{
+        font-size: 70px;
+        left: 40px;
+    }
+
+    .mainLeft{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mainButtons{
+        width: 100%;
+    }
+
+    .showPhoto{
+        width: 100%;
+        height: 115px;
+        margin-top: 25px;
+    }
+
+    .showPhoto svg{
+        display: none;
+    }
+
+    .showPhoto p br{
+        display: none;
+    }
+
+    .showPhoto p{
+        top: 50%;
+    }
+
+    .fact{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fact__el{
+        width: 75%;
+    }
+
+    .shadowOne{
+        display: none;
+    }
+
+    .shadowTwo{
+        display: none;
+    }
+
+    .shadowTree{
+        display: none;
+    }
+
+    .swiperServices{
+        height: 100%;
+    }
+
+    .turnkey{
+        padding: 40px 70px;
+    }
+
+    .turnkeyTwo{
+        padding: 40px 70px;
+    }
+
+    .turnkeyTree{
+        padding: 40px 70px;
+    }
+
+    .turnkey h2{
+        text-align: left;
+        margin-bottom: 80px;
+    }
+
+    .turnkeyContainer{
+        flex-direction: column;
+    }
+
+    .turnkeyLeft{
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 75px;
+    }
+
+    .turnkeyRight{
+        width: 100%;
+    }
+}
+
+  
+@media (max-width:768px) {
+    .container{
+        width: 560px;
+    }
+
+    .imgMain{
+        height: 530px;
+    }
+
+    .imgMain h1{
+        left: 0;
+        width: 100%;
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 7.5px;
+        gap: 25px;
+    }
+
+    .imgMain h1 span{
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 125%; /* 30px */
+        letter-spacing: 1.2px;
+        text-transform: none;
+    }
+
+    .mainPlay{
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 65px;
+    }
+
+    .fact p{
+        font-size: 20px;
+    }
+
+    .lines{
+        display: none;
+    }
+
+    .turnkey h2{
+        text-align: center;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 125%;
+    }
+
+    .turnkeyLeft h4{
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 125%;
+    }
+
+    .turnkeyLeft p{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+    }
+
+    .turnkeyRight{
+        padding: 0px;
+        border-left: none;
+    }
+
+    .turnkey{
+        padding: 60px;
+    }
+
+    .turnkeyLeft{
+        margin-bottom: 60px;
+    }
+
+    .mb{
+        margin-bottom: 50px;
+    }
+
+    .turnkeyRight p{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    .turnkeyRight b{
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 125%;
+    }
+
+    .contactSocials{
+        margin: 20px 0;
+    }
+
+    .contactButtons{
+        flex-direction: column;
+        margin-bottom: 30px;
+        gap: 10px;
+    }
+
+    .contactButtons p{
+        font-size: 20px;
+    }
+
+    .contactInfo{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .contactRight p{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .bronButton{
+        font-size: 18px !important;
+        display: block !important;
+    }
+
+    .contactSocialsMobile{
+        display: block;
+    }
+
+
+    .contactRight a:not(.contactSocials a){
+        display: none;
+    }
+
+
+}
+  
+@media (max-width:576px) {
+    .container{
+        width: 96%;
+    }
+
+    .main{
+        margin-top: 100px;
+    }
+
+    .imgMain h1{
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 125%; /* 37.5px */
+        letter-spacing: 4.5px;
+    }
+
+    .imgMain h1 span{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 125%; /* 20px */
+        letter-spacing: 0.8px;
+    }
+
+    .mainButtonTwo,
+    .showPhoto,
+    .mainButtonOne{
+        height: 85px;
+    }
+
+    .fact__el{
+        width: 90%;
+    }
+
+    .mainButtons{
+        gap: 20px;
+    }
+
+    .showPhoto{
+        margin-top: 20px;
+    }
+
+    .turnkeyTwo,
+    .turnkeyTree,
+    .turnkey{
+        padding: 60px 20px;
+    }
+
+    .turnkey h2{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 125%;
+        margin-bottom: 50px;
+    }
+
+    .turnkeyLeft{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .turnkeyLeft h4{
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 125%
+    }
+
+    .turnkeyLeft p{
+        width: 100%;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+    }
+
+    .turnkeyRight p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        margin-top: 16px;
+    }
+
+    .turnkeyRight b{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 125%;
+    }
+
+    .mb{
+        margin-top: 20px;
+    }
+
+    .contactInfo,
+    .contactRight p{
+        max-width: 300px;
+        width: 100%;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .contactSocialsMobile{
+        display: none !important;
+    }
+
+    .contactRight a:not(.contactSocialsMobile){
+        display: block !important;
+    }
+
+    .contactLeft{
+        height: 320px;
+    }
 }

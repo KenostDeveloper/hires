@@ -138,3 +138,82 @@
     font-family: 'cygre-black', sans-serif;
 
 }
+
+
+.FaqPrice p{
+    width: 80%;
+}
+
+
+@media (max-width:1000px) {
+    .faqCardImg{
+        width: 300px;
+    }
+
+    .faqCard{
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    .faqCard p{
+        width: calc(100% - 324px);
+    }
+}
+
+@media (max-width:768px) {
+    .faqCard{
+        flex-direction: column;
+    }
+
+    .faqCardImg{
+        width: 100%;
+    }
+
+    .faqCard p{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .faqQuestion p{
+        font-size: 28px;
+    }
+
+    .FaqPrice p{
+        font-size: 20px;
+    }
+
+    .FaqPrice b{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:576px) {
+    .faqQuestion p{
+        font-size: 16px;
+    }
+
+    .faqQuestion img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .faqQuestion{
+        padding: 26px 0 16px 0;
+        border-bottom: 1px solid #312C2C;
+    }
+    
+    .faqCard p{
+        font-family: 16px;
+        line-height: 1.1;
+    }
+
+    .FaqPrice p{
+        font-size: 16px;
+        width: 70%;
+    }
+
+    .FaqPrice b{
+        font-size: 16px;
+    }
+}
