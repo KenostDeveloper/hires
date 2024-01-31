@@ -93,6 +93,24 @@ legend {
     width: 100%;
 }
 
+@font-face {
+    font-family: "cygre-black";
+    font-weight: 900;
+    src: url("./fonts/Cyrge/black.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: "cygre-black";
+    font-weight: 700;
+    src: url("./fonts/Cyrge/bold.ttf") format('truetype');
+  }
+  
+  @font-face {
+    font-family: "cygre-black";
+    src: url("./fonts/Cyrge/regular.ttf") format('truetype');
+    font-weight: 400;
+  }
+
 body{
     overflow-x: hidden;
     min-height: 200vh;

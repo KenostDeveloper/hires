@@ -24,9 +24,9 @@ export default function RootLayout({
   return (
     <html lang="ru">
     <head>
-      <link
+      {/* <link
           href="https://blogfonts.com/css/aWQ9MjI5NDAxJnN1Yj00MDEmYz1jJnR0Zj1DeWdyZS1CbGFjay1CRjYzZWVlYmYzOTQyYjIudHRmJm49Y3lncmUtYmxhY2s/Cygre Black.ttf"
-          rel="stylesheet" type="text/css"/>
+          rel="stylesheet" type="text/css"/> */}
           
     </head>
     <body className={oswald.className}>
