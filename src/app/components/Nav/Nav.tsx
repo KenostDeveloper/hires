@@ -88,11 +88,11 @@ const Nav = ({setModal}:any) => {
                 <img onClick={() => setIsMenu(false)} className={styles.mobileClose} src="/close.svg" alt="" />
 
                 <div className={styles.MobileMenuEls}>
-                    <div onClick={() => scrolltoHash('about')} className={styles.link}>О нас</div>
-                    <div onClick={() => scrolltoHash('services')} className={styles.link}>Аренда студии</div>
-                    <div onClick={() => scrolltoHash('podcast')} className={styles.link}>Подкасты под ключ</div>
-                    <div onClick={() => scrolltoHash('price')} className={styles.link}>Прайс</div>
-                    <div onClick={() => scrolltoHash('contacts')} className={styles.link}>Контакты</div>
+                    <div onClick={() => {scrolltoHash('about'); setIsMenu(false)}} className={styles.link}>О нас</div>
+                    <div onClick={() => {scrolltoHash('services'); setIsMenu(false)}} className={styles.link}>Аренда студии</div>
+                    <div onClick={() => {scrolltoHash('podcast'); setIsMenu(false)}} className={styles.link}>Подкасты под ключ</div>
+                    <div onClick={() => {scrolltoHash('price'); setIsMenu(false)}} className={styles.link}>Прайс</div>
+                    <div onClick={() => {scrolltoHash('contacts'); setIsMenu(false)}} className={styles.link}>Контакты</div>
                     <Link href="tel:+79996667575" className={styles.link}>+7 (999) 666-75-75</Link>
 
                     <div className={styles.mobileSocial}>
