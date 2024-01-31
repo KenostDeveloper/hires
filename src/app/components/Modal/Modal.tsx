@@ -3,7 +3,11 @@ import style from './Modal.module.css'
 
 const Modal = ({active, setActive, children}: any) => {
 
+<<<<<<< HEAD
     // active? document.body.style.overflowY = "hidden" : document.body.style.overflowY = 'auto';
+=======
+    //active? document.body.style.overflowY = "hidden" : document.body.style.overflowY = 'auto';
+>>>>>>> f1905711b9edea5560e4f56afc1056fa391c57e7
 
     return (
         <div className={active ? `${style.modal} ${style.active}` : style.modal} onClick={() => setActive(false)}>
