@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import style from './ModalPhoto.module.css'
 
 const ModalPhoto = ({active, setActive, children, isIframe, id}: any) => {
+
+    useEffect(() => {
+        if (active) {
+          document.body.classList.add("overflow-y-hidden")
+        } else {
+          document.body.classList.remove("overflow-y-hidden")
+        }
+    }, [active]);
 
     if(isIframe == true){
         return (

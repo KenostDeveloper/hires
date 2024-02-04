@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import style from './Modal.module.css'
 
 const Modal = ({active, setActive, children}: any) => {
 
     // active? document.body.style.overflowY = "hidden" : document.body.style.overflowY = 'auto';
+    
+    useEffect(() => {
+        if (active) {
+          document.body.classList.add("overflow-y-hidden")
+        } else {
+          document.body.classList.remove("overflow-y-hidden")
+        }
+    }, [active]);
 
     return (
         <div className={active ? `${style.modal} ${style.active}` : style.modal} onClick={() => setActive(false)}>

@@ -46,6 +46,18 @@
     z-index: 99;
 }
 
+.PhotoClose{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.PhotoClose svg path{
+    fill: #FFF;
+}
+
 .modelPhoto.open{
     opacity: 1;
     pointer-events: all;

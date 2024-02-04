@@ -58,7 +58,7 @@ const Nav = ({setModal}:any) => {
                 </div>
 
                 <div className={styles.navLinks}>
-                    <Link href="tel:+79996667575" className={styles.link}>+7 (999) 666-75-75</Link>
+                    <Link href="tel:+79939731212" className={styles.link}>+7 (993) 973-12-12</Link>
                     <Link target='_blank' href="https://vk.com/hires.studio" className={styles.vk}>
                         <svg viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -66,7 +66,7 @@ const Nav = ({setModal}:any) => {
                                 />
                         </svg>
                     </Link>
-                    <Link target='_blank' href="https://t.me/hiresst" className={styles.tg}>
+                    <Link target='_blank' href="https://t.me/hiresstud" className={styles.tg}>
                         <svg viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M25.6129 0.872658C25.6129 0.872658 28.2031 -0.137342 27.9872 2.31552C27.9153 3.32553 27.2677 6.86053 26.7641 10.6841L25.0373 22.0106C25.0373 22.0106 24.8934 23.6699 23.5983 23.9585C22.3031 24.247 20.3605 22.9485 20.0007 22.6599C19.7129 22.4435 14.6045 19.197 12.8057 17.6099C12.3021 17.177 11.7265 16.3113 12.8777 15.3013L20.4325 8.087C21.2959 7.22126 22.1593 5.20126 18.5617 7.65413L8.48873 14.5077C8.48873 14.5077 7.33753 15.2291 5.17907 14.5799L0.502281 13.137C0.502281 13.137 -1.22453 12.0549 1.72543 10.9727C8.92047 7.58193 17.7703 4.11906 25.6129 0.872658Z"
@@ -93,7 +93,7 @@ const Nav = ({setModal}:any) => {
                     <div onClick={() => {scrolltoHash('podcast'); setIsMenu(false)}} className={styles.link}>Подкасты под ключ</div>
                     <div onClick={() => {scrolltoHash('price'); setIsMenu(false)}} className={styles.link}>Прайс</div>
                     <div onClick={() => {scrolltoHash('contacts'); setIsMenu(false)}} className={styles.link}>Контакты</div>
-                    <Link href="tel:+79996667575" className={styles.link}>+7 (999) 666-75-75</Link>
+                    <Link href="tel:+79939731212" className={styles.link}>+7 (993) 973-12-12</Link>
 
                     <div className={styles.mobileSocial}>
                         <Link target='_blank' href="https://vk.com/hires.studio" className={styles.vk}>
@@ -103,7 +103,7 @@ const Nav = ({setModal}:any) => {
                                     />
                             </svg>
                         </Link>
-                        <Link target='_blank' href="https://t.me/hiresst" className={styles.tg}>
+                        <Link target='_blank' href="https://t.me/hiresstud" className={styles.tg}>
                             <svg viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M25.6129 0.872658C25.6129 0.872658 28.2031 -0.137342 27.9872 2.31552C27.9153 3.32553 27.2677 6.86053 26.7641 10.6841L25.0373 22.0106C25.0373 22.0106 24.8934 23.6699 23.5983 23.9585C22.3031 24.247 20.3605 22.9485 20.0007 22.6599C19.7129 22.4435 14.6045 19.197 12.8057 17.6099C12.3021 17.177 11.7265 16.3113 12.8777 15.3013L20.4325 8.087C21.2959 7.22126 22.1593 5.20126 18.5617 7.65413L8.48873 14.5077C8.48873 14.5077 7.33753 15.2291 5.17907 14.5799L0.502281 13.137C0.502281 13.137 -1.22453 12.0549 1.72543 10.9727C8.92047 7.58193 17.7703 4.11906 25.6129 0.872658Z"

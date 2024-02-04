@@ -35,7 +35,7 @@ export default function RootLayout({
           <div className="container">
             <div className="footerLeft">
                 <p>ИП МЕРЕНКОВ ДЕНИС ИГОРЕВИЧ</p>
-                <Link href="#" className="footerLink">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</Link>
+                <Link href="/privacity" className="footerLink">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</Link>
             </div>
             <p>2024</p>
           </div>

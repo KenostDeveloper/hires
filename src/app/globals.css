@@ -116,6 +116,10 @@ body{
     min-height: 200vh;
 }
 
+.overflow-y-hidden{
+  overflow-y: hidden;
+}
+
 .swiper-pagination-bullet-active{
     background: #4A0EB9 !important;
 }
