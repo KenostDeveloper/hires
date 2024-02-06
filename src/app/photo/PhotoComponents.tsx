@@ -4,6 +4,7 @@ import styles from "./photo.module.css";
 import Modal from "../components/Modal/Modal";
 import Nav from "../components/Nav/Nav";
 import Image from 'next/image'
+import Link from "next/link";
 
 export default function PhotoComponents() {
     const [modal, setModal] = useState(false)
@@ -73,47 +74,47 @@ export default function PhotoComponents() {
           id: 1,
           imgSrc: "/Photo/2024-01-24 01.36.08.jpg"
       },
-      // {
-      //     id: 1,
-      //     imgSrc: "/Photo/6U6A7218.png"
-      // },
-      // {
-      //     id: 1,
-      //     imgSrc: "/Photo/6U6A7222.jpg"
-      // },
-      // {
-      //     id: 1,
-      //     imgSrc: "/Photo/6U6A7224.png"
-      // },
-      // {
-      //     id: 1,
-      //     imgSrc: "/Photo/2024-01-24 01.36.17.jpg"
-      // },
-      // {
-      //     id: 1,
-      //     imgSrc: "/Photo/6U6A7227.png"
-      // },
-      // {
-      //     id: 1,
-      //     imgSrc: "/Photo/2024-01-24 01.36.21.jpg"
-      // },
-      // {
-      //     id: 1,
-      //     imgSrc: "/Photo/6U6A7231.png"
-      // },
-      // {
-      //     id: 1,
-      //     imgSrc: "/Photo/6U6A7233.png"
-      // },
+      {
+          id: 1,
+          imgSrc: "/Photo/6U6A7218.png"
+      },
+      {
+          id: 1,
+          imgSrc: "/Photo/6U6A7222.jpg"
+      },
+      {
+          id: 1,
+          imgSrc: "/Photo/6U6A7224.png"
+      },
+      {
+          id: 1,
+          imgSrc: "/Photo/2024-01-24 01.36.17.jpg"
+      },
+      {
+          id: 1,
+          imgSrc: "/Photo/6U6A7227.png"
+      },
+      {
+          id: 1,
+          imgSrc: "/Photo/2024-01-24 01.36.21.jpg"
+      },
+      {
+          id: 1,
+          imgSrc: "/Photo/6U6A7231.png"
+      },
+      {
+          id: 1,
+          imgSrc: "/Photo/6U6A7233.png"
+      },
 
-      // {
-      //     id: 1,
-      //     imgSrc: "/Photo/2024-01-24 01.36.30.jpg"
-      // },
-      // {
-      //     id: 1,
-      //     imgSrc: "/Photo/6U6A7234.png"
-      // },
+      {
+          id: 1,
+          imgSrc: "/Photo/2024-01-24 01.36.30.jpg"
+      },
+      {
+          id: 1,
+          imgSrc: "/Photo/6U6A7234.png"
+      },
   ]
 
   const [modelPhoto, setModelPhoto] = useState(false)
@@ -139,16 +140,36 @@ export default function PhotoComponents() {
                 </g>
                 </svg>
             </div>
-            <Image width={2000} height={2000} src={tempSrc} onClick={(e) => e.stopPropagation()} alt={""}>
-            </Image>
+            <img src={tempSrc} onClick={(e) => e.stopPropagation()} />
         </div>
 
+
         <div className={styles.gallery}>
-                {Photo.map((card, index) => (
-                  <div className={styles.pics} key={index} onClick={() => getImg(card.imgSrc)}>
-                        <Image width={2000} height={2000} src={card.imgSrc} alt={""}/>
-                  </div>
-                ))}
+            {Photo.map(({ id, imgSrc }) => (
+                // <Link
+                // key={id}
+                // href={`/?photoId=${id}`}
+                // as={`/p/${id}`}
+                // //   ref={id === Number(lastViewedPhoto) ? lastViewedPhotoRef : null}
+                // shallow
+                // >
+                    <Image
+                        onClick={() => getImg(imgSrc)}
+                        key={id}
+                        alt="Hires studio - фото"
+                        src={imgSrc}
+                        width={720}
+                        height={380}
+                        quality={75}
+                        blurDataURL="/images/path-to-blur-image.jpg"
+                        placeholder="blur"
+                        sizes="(max-width: 640px) 100vw,
+                        (max-width: 1280px) 50vw,
+                        (max-width: 1536px) 33vw,
+                        25vw"
+                    />
+                // </Link>
+            ))}
         </div>
     </div>
   )

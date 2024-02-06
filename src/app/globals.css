@@ -42,7 +42,7 @@ img {
 
 img, svg {
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 address {
@@ -113,7 +113,6 @@ legend {
 
 body{
     overflow-x: hidden;
-    min-height: 200vh;
 }
 
 .overflow-y-hidden{
