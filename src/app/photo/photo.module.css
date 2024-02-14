@@ -73,10 +73,40 @@
     fill: #FFF;
 }
 
+
 .modelPhoto.open{
     opacity: 1;
     pointer-events: all;
 }
+
+.modelPhoto::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-position: center;
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+    background: url("/logo-loading.svg");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+    to{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    from {
+        transform: scale(0.8);
+    }
+}
+
 
 .modelPhoto img{
     transform: scale(0.7);

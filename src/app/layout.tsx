@@ -3,6 +3,7 @@ import { Oswald } from "next/font/google";
 import "./globals.css";
 import Nav from "@/app/components/Nav/Nav";
 import Link from "next/link";
+import Provider from "./components/Helps/Provider";
 
 
 const oswald = Oswald({ subsets: ["latin"] });
@@ -30,16 +31,9 @@ export default function RootLayout({
           
     </head>
     <body className={oswald.className}>
-      {children}
-      <footer className="footer">
-          <div className="container">
-            <div className="footerLeft">
-                <p>ИП МЕРЕНКОВ ДЕНИС ИГОРЕВИЧ</p>
-                <Link href="/privacity" className="footerLink">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</Link>
-            </div>
-            <p>2024</p>
-          </div>
-      </footer>
+      <Provider>
+        {children}
+      </Provider>
     </body>
     </html>
   );

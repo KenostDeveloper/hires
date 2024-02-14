@@ -661,6 +661,63 @@
     display: none;
 }
 
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.clients__el{
+    width: calc(50% - 10px);
+    height: 230px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.clients__el:hover::before{
+    background-color: rgba(74, 14, 85, 0.70);
+}
+
+.clients__el::before{
+    background-color: rgba(0, 0, 0, 0.60);
+    transition: all 0.5s;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.clients__el img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clients__el p{
+    position: absolute;
+    font-family: 'cygre-black', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: #FFF;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.ClientBack{
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
 
 @media (max-width: 1600px) {
     .shadowOne{

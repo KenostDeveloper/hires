@@ -4,6 +4,7 @@ import PhotoImage from "../components/Photo/Photo";
 import Title from "../components/Title/Title";
 import styles from "./photo.module.css";
 import PhotoComponents from "./PhotoComponents";
+import Footer from "../components/footer/Footer";
 
 
 
@@ -19,42 +20,11 @@ export const metadata = {
 export default function Photo() {
 
   return (
-    <div className={styles.main}>
-        <PhotoComponents />
-        {/* <div className={styles.kenost}>
-            <div className={`container ${styles.container}`}>
-
-
-                <Title padding="false" text="Январь 2024" />
-                <div className={styles.PhotoContainer}>
-                    <PhotoImage />
-                    <PhotoImage />
-                    <PhotoImage />
-                    <PhotoImage />
-                    <PhotoImage />
-                </div>
-
-                <Title text="Январь 2024" />
-                <div className={styles.PhotoContainer}>
-                    <PhotoImage />
-                    <PhotoImage />
-                    <PhotoImage />
-                    <PhotoImage />
-                    <PhotoImage />
-                </div>
-
-                <Title text="Январь 2024" />
-                <div className={styles.PhotoContainer}>
-                    <PhotoImage />
-                    <PhotoImage />
-                    <PhotoImage />
-                    <PhotoImage />
-                    <PhotoImage />
-                </div>
-            </div>
-        </div> */}
-
-        
+    <div>
+        <div className={styles.main}>
+            <PhotoComponents />
+        </div>
     </div>
+    
   )
 }
